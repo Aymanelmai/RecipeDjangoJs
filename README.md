@@ -1,5 +1,5 @@
 
-![Preview](docs/preview.png)
+
 
 ## Core Features
 - 🥗 **Manage your recipes** - Manage your ever growing recipe collection
