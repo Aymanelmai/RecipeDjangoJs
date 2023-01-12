@@ -1,0 +1,49 @@
+site_name: Tandoor Recipes
+site_description: Tandoor Recipe Documentation
+site_author: vabene1111
+repo_url: https://github.com/vabene1111/recipes
+edit_uri: https://github.com/vabene1111/recipes/tree/develop/docs
+extra_css:
+  - stylesheets/extra.css
+
+theme:
+  name: material
+  repo: fontawesome/brands/github
+  logo: logo_color.svg
+  favicon: logo_color.svg
+  palette:
+    scheme: slate
+
+
+
+markdown_extensions:
+  - admonition
+  - pymdownx.highlight
+  - pymdownx.superfences
+
+plugins:
+  - include-markdown
+  - search
+
+nav:
+  - Home: 'index.md'
+  - Installation:
+      - Docker: install/docker.md
+      - Unraid: install/unraid.md
+      - Synology: install/synology.md
+      - Kubernetes: install/kubernetes.md
+      - KubeSail or PiBox: install/kubesail.md
+      - Manual: install/manual.md
+      - Other setups: install/other.md
+  - Features:
+      - Templating: features/templating.md
+      - Shopping: features/shopping.md
+      - Authentication: features/authentication.md
+      - Storages and Sync: features/external_recipes.md
+      - Import/Export: features/import_export.md
+  - System:
+      - Updating: system/updating.md
+      - Permission System: system/permissions.md
+      - Backup: system/backup.md
+  - Contributing: contribute.md
+  - FAQ: faq.md
